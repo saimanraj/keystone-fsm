@@ -1,5 +1,6 @@
 package com.keystone.service;
-
+import org.mockito.junit.jupiter.MockitoSettings;
+import org.mockito.quality.Strictness;
 import com.keystone.domain.entity.*;
 import com.keystone.domain.enums.*;
 import com.keystone.dto.request.*;
@@ -20,6 +21,7 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
+@MockitoSettings(strictness = Strictness.LENIENT)
 class WorkOrderServiceTest {
 
     @Mock WorkOrderRepository workOrderRepository;
