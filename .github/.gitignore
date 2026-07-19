@@ -1,0 +1,16 @@
+# Java compiled files
+keystone-backend/target/
+keystone-backend/*.jar
+
+# Environment files
+.env
+*.env
+
+# Node modules
+keystone-frontend/node_modules/
+keystone-frontend/dist/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
