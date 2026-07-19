@@ -17,3 +17,6 @@ logging:
   level:
     com.keystone: WARN
     org.springframework.security: WARN
+
+server:
+  port: ${PORT:8080}
