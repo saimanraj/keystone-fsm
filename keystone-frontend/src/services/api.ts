@@ -1,8 +1,6 @@
 import axios, { AxiosInstance, AxiosError } from 'axios';
 import toast from 'react-hot-toast';
 
-// Use relative URL so Vite proxy handles routing to backend
-// cast import.meta to any to avoid TypeScript error when ImportMeta type lacks env
 const BASE_URL = (import.meta as any).env?.VITE_API_URL || 'https://keystone-fsm.onrender.com/api/v1';
 
 const api: AxiosInstance = axios.create({
