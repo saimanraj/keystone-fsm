@@ -1,19 +1,17 @@
-@"
-# Backend
+# Backend - never commit compiled files
 keystone-backend/target/
 keystone-backend/.env
 
-# Frontend
+# Frontend - never commit dependencies
 keystone-frontend/node_modules/
 keystone-frontend/dist/
 keystone-frontend/.env
 
-# IDE
+# IDE files
 .idea/
 .vscode/
 *.iml
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
-"@ | Out-File -FilePath .gitignore -Encoding utf8
